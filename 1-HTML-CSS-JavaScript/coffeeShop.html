@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CoffeeCSS Practice: C&C Coffee Corner</title>
+    <link rel="stylesheet" href="css/coffeeShop.css" />
+    
+</head>
+<body>
+    <h1><img src="css/coffeebean.png" width="80" alt="picture of coffee beans" />Calvin's Coffee Corner</h1>
+    <section class="section1">
+        <h2 class="menu">Menu</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="css/coffee.jpeg" width="50" alt="picture of a coffee" />Coffee</td>
+                    <td>$2</td>
+                </tr>
+                <tr>
+                    <td><img src="css/tea.jpeg" width="50" alt="picture of tea" />Tea</td>
+                    <td>$1.50</td>
+                </tr>
+                <tr>
+                    <td><img src="css/chickenwaffle.jpeg" width="50" alt="picture chicken and waffle" /> Chicken & Waffles</td>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <td><img src="css/blueberrypancakes.jpeg" width="50" alt="blueberrypancake" /> Blueberry Pancakes</td>
+                    <td>$6</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="section2">
+        <h2 class="menu">Submit Your Review</h2>
+        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+            <label class="name5" for="name">Name</label> 
+            <input type="text" id="name" name="name" /><br />
+            <label class="rating5" for="rating">Your Rating:</label>
+            1 <input type="range" id="rating" name="rating" min="1" max="10" /> 10
+            <div class="checkbox">
+                Your Fav: <br />
+                <input type="checkbox" id="coffee" name="item" value="coffee"/>
+                <label for="coffee">coffee</label>
+                <input type="checkbox" id="tea"name="item" value="tea" /> 
+                <label for="tea">tea</label>
+                <input type="checkbox" id="chickenWaffles" name="items" value="chickenWaffles"/> 
+                <label for="chickenWaffles">chicken waffles</label>
+                <input type="checkbox" id="blueberryPancakes" name="items" value="blueberryPancakes"/> 
+                <label for="blueberryPancakes">blueberry pancakes</label>
+            </div>
+            <input class="btn" type="submit" id="submit-btn" />
+            
+        </form>
+    </section>
+    <section class="section3">
+        <h2 class="menu">Contact</h2>
+        <p class="address">Call us at: <a href="tel:+15555551212">1-555-555-1212</a></p>
+        <address class="address">
+            CC Coffee Corner<br />
+            101 W Main St<br />
+            Bellevue, WA 98004
+        </address>
+    </section>
+    </body>
+</html>

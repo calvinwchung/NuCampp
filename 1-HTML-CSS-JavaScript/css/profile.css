@@ -1,0 +1,103 @@
+body {
+    
+    font-family: Tahoma, Arial, sans-serif;
+    background-image: url("");
+    opacity: 0.76;
+    background-image: url(https://wallpaperaccess.com/full/208106.jpg)
+    /* width: 800px */
+}
+
+h1 {
+    color: rgba(187, 3, 3, 0.979);
+    font: 60px Monospace, Helvetica, serif;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    border-radius: 30px;
+    background-color: none;
+    width: 800px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font: 30px Monospace, Helvetica, serif;
+    text-align: left;
+    padding: 20px;
+    margin: left;
+    border-radius: 30px;
+    width: 300px;
+    
+}
+
+.name {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 30px;
+    margin: right;
+    text-align: right;
+    float: right;
+    width: 100%;
+    
+}
+
+audio{
+    width: 100%;
+}
+
+.deleteme {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.column1 {
+
+    border-radius: 30px;
+    /* margin: right;
+    text-align: right;
+    float: right;
+    width: 50%; */
+}
+
+.column2 {
+    border-radius: 30px;
+    /* margin: left;
+    text-align: left;
+    float: left;
+    width: 50%; */
+}
+
+.section1 {
+    border: 5px solid none;
+    /* padding: 20px; */
+    color:rgb(255, 255, 255);
+    font: 15px monospace, helvetica, serif;
+    margin: left;
+    border-radius: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: none;
+    
+}
+
+.section2 {
+    border: 5px solid none;
+    padding: 20px;
+    color:rgb(255, 255, 255);
+    font: 15px monospace, helvetica, serif;
+    margin: left;
+    border-radius: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: rgba(187, 3, 3, 0.979);
+    margin-right: 20px;
+
+}
+
+p {
+    font: 15px Monospace, Helvetica, serif;
+}

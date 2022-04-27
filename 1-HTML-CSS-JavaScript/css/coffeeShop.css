@@ -1,0 +1,118 @@
+body {
+    
+    font-family: Tahoma, Arial, sans-serif;
+    background-image: url("https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    opacity: 0.75;
+}
+
+h1 {
+    color: rgb(13, 2, 24);
+    font: 40px cursive, Helvetica, serif;
+    text-align: center;
+    width: 800px;
+    border: 5px solid rgb(111, 93, 192);
+    padding: 20px;
+    margin: auto;
+    border-radius: 30px;
+    background-color: beige;
+      
+}
+
+h2 {
+    text-align: left;
+    font: cursive;
+
+}
+
+
+table {
+    width: 50%;
+    text-align: left;
+}
+
+thead {
+    text-align: left;
+    font: cursive;
+    
+}
+
+
+
+#submit-btn {
+    display: block;
+}
+
+.section1 {
+    width: 800px;
+    border: px solid rgb(111, 93, 192);
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 30px;
+    background-color: aqua;
+    font: cursive;
+}
+
+.section2 {
+    width: 800px;
+    border: 5px solid rgb(111, 93, 192);
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 30px;
+    text-align: center;
+    background-color: azure;
+    font: cursive;
+}
+
+.section3 {
+    width: 800px;
+    border: 5px solid rgb(111, 93, 192);
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    background-color: blanchedalmond;
+    font: cursive;
+}
+
+.menu {
+    text-align: center;
+    font: 20px cursive;
+    margin: auto
+
+}
+
+.table {
+    text-align: left;
+    font: 17px cursive;
+    margin: auto
+}
+
+.btn{
+    margin: auto;
+    font: 15px cursive;
+    border-radius: 20px
+}
+
+
+.name {
+    font: 20px cursive;
+}
+
+.address {
+    font: 15px cursive;
+}
+
+.checkbox {
+    font: 15px cursive;
+    margin: auto;
+    text-align: center;   
+}
+
+.name5 {
+    font: 20px cursive;
+}
+
+.rating5 {
+    font: 20px cursive;
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors Palette</title>
+</head>
+<body>    
+    <script>
+        window.addEventListener("load", makePage);
+        const url = "https://coolors.co/palette/353531-ec4e20-ff9505-016fb9-000000";
+
+        function makePage() {
+            const body = document.body;
+            body.style.color = "cornsilk";
+            body.style.overflow = "hidden";
+
+            const palette = createPalette(url);
+            console.log(palette);
+            
+
+            for( let i = 0; i <= palette.length - 1; i++) {
+                let div = document.createElement("div");
+                div.style.background = palette[i];
+                let height = window.innerHeight / palette.length-1;
+                div.style.height = height + "px"
+
+                body.appendChild(div)
+            }
+        }
+
+        function createPalette(url) {
+            const lastSlash = url.lastIndexOf("/")
+            const paletteStr = url.slice(lastSlash + 1)
+            const arr = paletteStr.split("-")
+
+            for(let i = 0; i < arr.length; i++) {
+                arr[i] = "#" + arr[i];
+            }
+            return arr;
+        }
+    </script>
+</body>
+</html>
