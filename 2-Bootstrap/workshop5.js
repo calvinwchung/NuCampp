@@ -13,7 +13,7 @@ class Bootcamp {
     }
 
     registerStudent(studentToRegister) {
-        if (!studentToRegister.name || !studentToRegister.email) {
+        if ((!studentToRegister.name) || (!studentToRegister.email)) {
             console.log("Invalid name or email");
             return false; 
         }
