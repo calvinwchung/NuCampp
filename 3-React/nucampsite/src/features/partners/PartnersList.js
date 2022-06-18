@@ -20,3 +20,6 @@ const PartnersList = () => {
 };
 
 export default PartnersList;
+
+
+

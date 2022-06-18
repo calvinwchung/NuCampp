@@ -19,3 +19,4 @@ const Partner = ({partner}) => {
 }
 
 export default Partner;
+
