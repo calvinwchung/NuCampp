@@ -3,6 +3,7 @@ import { Button, Modal, ModalHeader, ModalBody, FormGroup, Label } from 'reactst
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { validateCommentForm } from '../../utils/validateCommentForm';
 
+
 const CommentForm = ({ campsiteId }) => {
     const [modalOpen, setModalOpen] = useState(false);
 
