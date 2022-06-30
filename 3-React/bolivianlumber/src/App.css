@@ -1,0 +1,134 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.card-body > .card-title {
+  font-family: Arial, Arial, Helvetica, sans-serif;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+h2 {
+  color: #3046c5;
+}
+
+.card-img-overlay .card-title {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 200px;
+}
+
+.site-footer {
+  background-image: linear-gradient(#cec8ff, white);
+  padding: 20px 0;
+  margin-top: 2rem;
+}
+
+.navbar-brand {
+  max-width: 4rem;
+  margin-right: 2rem;
+}
+
+.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  margin-right: 2rem;
+  max-width: 4rem;
+}
+
+.navbar-dark {
+  background-color: #901cad;
+  background-image: linear-gradient(to right, #5637dd, #3046c5, #510e5a);
+  margin-bottom: 2rem;
+  min-height: 8rem;
+}
+
+.page-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: 300ms ease-out;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: 300ms ease-in;
+}
+
+.parallax {
+  display: flex;
+  justify-content: center;
+}
+
+.parallax_background {
+  width: 1080px;
+  height: 1280px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+.parallax_background {
+  background-image: url("https://cdn.shopify.com/s/files/1/0358/1661/products/Shop_B_Darling_Wilder_Mountain_Wallpaper_-_The_Project_Nursery_Shop_71f1c929-f1d8-472b-bdc5-812dbd91a71c_1080x.png?v=1615992550");
+}
+
+.parallax_content {
+  width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  margin-top: 100px;
+}
+
+.parallax_heading,
+.parallax_cta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.parallax_heading {
+  background-color: #fff;
+  width: 40%;
+  padding: 40px;
+}
+
+.parallax_text {
+  margin: 10px 0;
+  font-size: 60px;
+}
+
+.parallax_caption {
+  margin: 0;
+  font-size: 20px;
+}
+
+.parallax_cta {
+  background-color: #ff737e;
+  width: 60%;
+  padding: 40px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 120px;
+}
+  
