@@ -14,7 +14,7 @@ const Parallax = () => {
   const renderContent = () => (
     <>  
       <div className='parallax_content_heading'>
-        <h1 className='parallax_content_heading_text'>WELCOME TO: BOLIVIA</h1>
+        <h1 className='parallax_content_heading_text'>BOLIVANLUMBER LLC</h1>
       </div>
     </>
   );
@@ -23,7 +23,7 @@ const Parallax = () => {
     <section className='parallax'>
       <div 
         className='parallax_background' 
-        style={{transform: `translateY(${offsetY * 0.65}px)`}} 
+        style={{transform: `translateY(-${offsetY * 0.65}px)`}} 
       />
       <div 
         className='parallax_background2' 
@@ -31,6 +31,7 @@ const Parallax = () => {
       />
       <div className='parallax_content'>{renderContent()}</div>
     </section>
+    
   )
 }
 

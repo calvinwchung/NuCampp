@@ -93,11 +93,13 @@ h2 {
 .parallax_background {
   background-image: url("https://images4.alphacoders.com/932/thumb-1920-932271.jpg");
   min-height: 100%;
+  background-position: top center;
 }
 
 .parallax_background2 {
   background-image: url("https://wallpaperaccess.com/full/773426.jpg");
   min-height: 100%;
+  background-position: center center;
 }
 
 .parallax_content {
@@ -148,12 +150,14 @@ h2 {
   position: relative;
   opacity: .6;
   padding: 18px;
-  letter-spacing: 20px;
+  letter-spacing: 15px;
+  margin-left: 130px;
 }
 
 .navBarNav {
   text-align: center;
   margin: auto;
+  /* position: fixed; */
 }
 
 .navBarItems {
@@ -163,6 +167,36 @@ h2 {
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
   top: 0;
 }
+
+.forms {
+  padding: 120px;  
+}
+
+.formBody {
+  text-align: center;
+  margin: auto; 
+}
+
+.contactText {
+  color: black;
+  letter-spacing: 10px;
+}
+
+.contactSubmitBtn {
+  background-color: black;
+  color: black;
+  letter-spacing: 3px;
+}
+  
+  .errorMes {
+    text-align: left;
+    margin-left: 15px;
+    letter-spacing: 4px;
+  }
+
+  .formText {
+    letter-spacing: 3px;
+  }
