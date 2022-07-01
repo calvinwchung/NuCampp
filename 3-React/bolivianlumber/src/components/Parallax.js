@@ -1,38 +1,32 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { Parallax } from 'react-parallax';
+import { Link } from 'react-router-dom'
 
-const Parallax = () => {
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
+const image1 = "https://images4.alphacoders.com/932/thumb-1920-932271.jpg"
+const image2 = "https://wallpaperaccess.com/full/773426.jpg"
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const renderContent = () => (
-    <>  
-      <div className='parallax_content_heading'>
-        <h1 className='parallax_content_heading_text'>BOLIVANLUMBER LLC</h1>
-      </div>
-    </>
-  );
-
+const ParallaxScroll = () => {
   return (
-    <section className='parallax'>
-      <div 
-        className='parallax_background' 
-        style={{transform: `translateY(-${offsetY * 0.65}px)`}} 
-      />
-      <div 
-        className='parallax_background2' 
-        style={{transform: `translateY(${offsetY * 0.65}px)`}} 
-      />
-      <div className='parallax_content'>{renderContent()}</div>
-    </section>
-    
+    <div style={{ textAlign: 'center' }}>
+      <Parallax className='paraImage' bgImage={ image1 } strength={ 500 }>
+        <div style={{ height: 700 }}>
+          <div className='paraText'>
+          <Link className='paraLink' to='/about'>BOLIVIA</Link>
+          </div>
+        </div>
+      </Parallax>
+      <h1>| | |</h1>
+      <Parallax className='paraImage' bgImage={ image2 } strength={ 500 }>
+        <div style={{ height: 700 }}>
+          <div className='paraText'>
+          <Link className='paraLink' to='/inventory'>SHOP</Link>
+          </div>
+        </div>
+      </Parallax>
+      <h1>| | |</h1>
+      <div style={{ height: '100vh' }}></div>
+    </div>
   )
 }
 
-export default Parallax;
+export default ParallaxScroll;

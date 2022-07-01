@@ -1,6 +1,5 @@
 import { Container, Col, Row } from 'reactstrap';
 import ContactForm from '../components/ContactForm';
-// import Parallax from '../components/Parallax';
 
 const ContactPage = () => {
     return (

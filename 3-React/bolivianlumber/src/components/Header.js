@@ -8,7 +8,7 @@ import {
     NavItem,
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import WoodLogo from '../app/assets/logo.png';
+// import WoodLogo from '../app/assets/logo.png';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ const Header = () => {
     return (
         <Navbar className='navbar' dark color='primary' sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
-                <img src={WoodLogo} alt='Lumber logo' className='float-start' />
+                {/* <img src={WoodLogo} alt='Lumber logo' className='float-start' /> */}
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
             <Collapse isOpen={menuOpen} navbar>

@@ -1,5 +1,4 @@
 import React from 'react';
-// import Parallax from './components/Parallax';
 import Header from './components/Header';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
@@ -20,7 +19,6 @@ function App() {
           <Route path='inventory/:campsiteId' element={<InventoryPage />} />
           <Route path='about' element={<AboutPage />} />
         </Routes>
-        {/* <Parallax /> */}
       </div>
       
     </>

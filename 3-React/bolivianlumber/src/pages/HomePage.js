@@ -1,12 +1,12 @@
 import { Container } from 'reactstrap';
-import Parallax from '../components/Parallax';
+import ParallaxScroll from '../components/Parallax';
 // import HomePageForm from '../components/HomePageForm';
 
 
 const HomePage = () => {
     return (
         <Container>
-            <Parallax />
+            <ParallaxScroll />
             {/* <HomePageForm /> */}
         </Container>
         )

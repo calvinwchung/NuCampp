@@ -56,16 +56,16 @@ h2 {
   min-height: 4rem;
 }
 
-.page-enter {
+/* .page-enter {
   opacity: 0;
   transform: translateX(-100%);
-}
+} */
 
-.page-enter-active {
+/* .page-enter-active {
   opacity: 1;
   transform: translateX(0%);
   transition: 300ms ease-out;
-}
+} */
 
 .page-exit {
   opacity: 1;
@@ -76,87 +76,11 @@ h2 {
   transition: 300ms ease-in;
 }
 
-.parallax {
-  display: flex;
-  justify-content: center;
-}
-
-.parallax_background, parallax_background2 {
-  width: 2080px;
-  height: 1280px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  opacity: .78;
-}
-
-.parallax_background {
-  background-image: url("https://images4.alphacoders.com/932/thumb-1920-932271.jpg");
-  min-height: 100%;
-  background-position: top center;
-}
-
-.parallax_background2 {
-  background-image: url("https://wallpaperaccess.com/full/773426.jpg");
-  min-height: 100%;
-  background-position: center center;
-}
-
-.parallax_content {
-  width: 2080px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  z-index: 1;
-  margin-top: 100px;
-}
-
-.parallax_heading,
-.parallax_cta {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.parallax_heading {
-  background-color: #fff;
-  width: 40%;
-  padding: 40px;
-}
-
-.parallax_text {
-  margin: 10px 0;
-  font-size: 60px;
-}
-
-.parallax_caption {
-  margin: 0;
-  font-size: 20px;
-}
-
-.parallax_cta {
-  background-color: #ff737e;
-  width: 60%;
-  padding: 40px;
-  font-size: 20px;
-  color: #fff;
-  margin-top: 120px;
-}
-
-.parallax_content_heading {
-  background-color: #111;
-  color: #fff;
-  margin-top: 300px;
-  position: relative;
-  opacity: .6;
-  padding: 18px;
-  letter-spacing: 15px;
-  margin-left: 130px;
-}
-
 .navBarNav {
   text-align: center;
   margin: auto;
+  z-index: 1000;
+  transition: 0.6s;
   /* position: fixed; */
 }
 
@@ -191,12 +115,43 @@ h2 {
   letter-spacing: 3px;
 }
   
-  .errorMes {
-    text-align: left;
-    margin-left: 15px;
-    letter-spacing: 4px;
-  }
+.errorMes {
+  text-align: left;
+  margin-left: 15px;
+  letter-spacing: 4px;
+}
 
-  .formText {
-    letter-spacing: 3px;
-  }
+.formText {
+  letter-spacing: 3px;
+}
+
+.bgImage {
+  width: 5000px;
+}
+
+.paraImage {
+  opacity: .85;
+}
+
+.paraText {
+  margin: auto;
+  margin-top: 50%;
+  background-color: black;
+  opacity: .6;
+  color: white;
+  letter-spacing: 4px;
+  font-size: 20px;
+  width: 15%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.paraLink {
+  text-decoration: none;
+  color: white;
+}
+
+
+
