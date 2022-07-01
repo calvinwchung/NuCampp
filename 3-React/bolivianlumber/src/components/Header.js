@@ -12,9 +12,20 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBackground = () => {
+        if(window.scrollY >= 80) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    };
+
+    window.addEventListener('scroll', changeBackground);
 
     return (
-        <Navbar className='navbar' dark color='primary' sticky='top' expand='md'>
+        <Navbar className={navbar ? 'navbar active' : 'navbar'} dark sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
                 {/* <img src={WoodLogo} alt='Lumber logo' className='float-start' /> */}
             </NavbarBrand>
@@ -23,7 +34,7 @@ const Header = () => {
                 <Nav className='ms-auto navBarNav' navbar>
                     <NavItem>
                         <NavLink className='nav-link navBarItems' to='/'>
-                            HOME
+                            || BOLVIANLUMBERLLC ||
                         </NavLink>
                     </NavItem>
                     <NavItem>

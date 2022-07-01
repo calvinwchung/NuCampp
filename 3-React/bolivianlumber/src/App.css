@@ -50,22 +50,20 @@ h2 {
 }
 
 .navbar-dark {
-  background-image: linear-gradient(to right, black, black, black);
+  background: transparent;
   opacity: .6;
   margin-bottom: -15rem;
   min-height: 4rem;
 }
 
-/* .page-enter {
-  opacity: 0;
-  transform: translateX(-100%);
-} */
+.navbar {
+  background: transparent;
+}
 
-/* .page-enter-active {
-  opacity: 1;
-  transform: translateX(0%);
-  transition: 300ms ease-out;
-} */
+.navbar.active {
+  background: linear-gradient(to right, black, black, black);
+  font-size: 20px;
+}
 
 .page-exit {
   opacity: 1;
