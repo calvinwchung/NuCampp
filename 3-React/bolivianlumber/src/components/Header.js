@@ -25,7 +25,6 @@ const Header = () => {
     window.addEventListener('scroll', changeBackground);
 
     function getNavBarClassName() {
-        
         let className = location.pathname === '/contact' ? 'navbar2' : 'navbar'
         return className
     }
