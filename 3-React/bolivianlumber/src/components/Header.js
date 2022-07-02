@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
     Navbar,
     NavbarBrand,
@@ -7,12 +7,12 @@ import {
     Nav,
     NavItem,
 } from 'reactstrap';
-import { NavLink } from 'react-router-dom';
-// import WoodLogo from '../app/assets/logo.png';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [navbar, setNavbar] = useState(false);
+    const location = useLocation();
 
     const changeBackground = () => {
         if(window.scrollY >= 80) {
@@ -24,10 +24,15 @@ const Header = () => {
 
     window.addEventListener('scroll', changeBackground);
 
+    function getNavBarClassName() {
+        
+        let className = location.pathname === '/contact' ? 'navbar2' : 'navbar'
+        return className
+    }
+
     return (
-        <Navbar className={navbar ? 'navbar active' : 'navbar'} dark sticky='top' expand='md'>
+        <Navbar className={(getNavBarClassName()) + (navbar ? 'navbar active' : '')} dark sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
-                {/* <img src={WoodLogo} alt='Lumber logo' className='float-start' /> */}
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
             <Collapse isOpen={menuOpen} navbar>

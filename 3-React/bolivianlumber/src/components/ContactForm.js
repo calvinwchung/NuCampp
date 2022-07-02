@@ -22,6 +22,7 @@ const ContactForm = () => {
             }}
             onSubmit={handleSubmit}
             validate={validateContactForm}
+            
         >
             <Form className='formBody'>
                 <FormGroup row className='formBody'>

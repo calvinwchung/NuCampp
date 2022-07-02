@@ -108,8 +108,7 @@ h2 {
 }
 
 .contactSubmitBtn {
-  background-color: black;
-  color: black;
+  background-color: black !important;
   letter-spacing: 3px;
 }
   
@@ -151,5 +150,12 @@ h2 {
   color: white;
 }
 
+.navbar2 {
+  color: black;
+  background: black;
+}
 
-
+.navbar2.active {
+  background: linear-gradient(to right, black, black, black);
+  font-size: 20px;
+}
