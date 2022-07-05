@@ -1,5 +1,21 @@
+import AboutOne from "../components/AboutOne";
+import AboutTwo from "../components/AboutTwo";
+import AboutThree from "../components/AboutThree";
+import TextBox from "../components/TextBox";
+import TextBox2 from "../components/TextBox2";
+import TextBox3 from "../components/TextBox3";
+
 const AboutPage = () => {
-    return <div>AboutPage</div>;
+    return (
+        <div>
+            <AboutOne />
+            <TextBox />
+            <AboutTwo />
+            <TextBox2 />
+            <AboutThree />
+            <TextBox3 />
+        </div>
+    )
 };
 
 export default AboutPage;

@@ -1,15 +1,14 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import { Link } from 'react-router-dom'
-
-const image1 = "https://images4.alphacoders.com/932/thumb-1920-932271.jpg"
-const image2 = "https://c4.wallpaperflare.com/wallpaper/90/929/128/road-misty-forest-twilight-wallpaper-preview.jpg"
-const image3 = "https://c4.wallpaperflare.com/wallpaper/205/989/86/morning-forest-sunlight-path-wallpaper-preview.jpg"
+import { Link } from 'react-router-dom';
+import Forest1 from '../app/assets/forest1.jpeg';
+import Forest2 from '../app/assets/forest2.jpeg';
+import Forest3 from '../app/assets/forest3.jpeg';
 
 const ParallaxScroll = () => {
   return (
     <div style={{ textAlign: 'center' }}>
-      <Parallax className='paraImage' bgImage={ image1 } strength={ 500 }>
+      <Parallax className='paraImage' bgImage={ Forest1 } strength={ 500 }>
         <div style={{ height: 700 }}>
           <div className='paraText'>
           <Link className='paraLink' to='/about'>BOLIVIA</Link>
@@ -17,7 +16,7 @@ const ParallaxScroll = () => {
         </div>
       </Parallax>
       <h1>| | |</h1>
-      <Parallax className='paraImage' bgImage={ image2 } strength={ 500 }>
+      <Parallax className='paraImage' bgImage={ Forest2 } strength={ 500 }>
         <div style={{ height: 700 }}>
           <div className='paraText'>
           <Link className='paraLink' to='/inventory'>SHOP</Link>
@@ -25,7 +24,7 @@ const ParallaxScroll = () => {
         </div>
       </Parallax>
       <h1>| | |</h1>
-      <Parallax className='paraImage' bgImage={ image3 } strength={ 500 }>
+      <Parallax className='paraImage' bgImage={ Forest3 } strength={ 500 }>
         <div style={{ height: 700 }}>
           <div className='paraText'>
           <Link className='paraLink' to='/contact'>CONTACT US</Link>
