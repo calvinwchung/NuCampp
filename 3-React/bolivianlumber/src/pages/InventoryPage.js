@@ -1,21 +1,19 @@
 import { Col, Row, Container } from 'reactstrap';
+import Cuta from '../app/assets/cuta.png';
+import Morado from '../app/assets/morado.png';
+import Pauqio from '../app/assets/pauqio.png';
+import Tajibo from '../app/assets/tajibo.png';
+import Tarara from '../app/assets/tarara.png';
+import InventoryOne from '../components/InventoryOne'
+import InventoryForm from '../components/InventoryForm';
+import InventoryBg from '../components/InventoryBg';
 
 const InventoryPage = () => {
     return (
         <Container>
-            <Row className='row-content align-items-center forms'>
-                
-            </Row>
-            <Row className='row-content formBody'>
-                <Col xs='7' className='formBody'>
-                    <h2 className='contactText'>CONTACT US!</h2>
-                    <hr/>
-                </Col>
-                <Col md='7' className='formBody'>
-                    
-                </Col>
-            </Row>
-            
+            <InventoryOne />
+            <InventoryBg />
+            <InventoryForm />
         </Container>
     )
 };
