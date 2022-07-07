@@ -5,6 +5,11 @@ import AboutPage from './pages/AboutPage';
 import InventoryPage from './pages/InventoryPage';
 import HomePage from './pages/HomePage';
 import { Routes, Route } from 'react-router-dom';
+import Tajibo from './components/Tajibo';
+import Pauqio from './components/Pauqio';
+import Morado from './components/Morado';
+import Tarara from './components/Tarara';
+import Cuta from './components/Cuta'
 import './App.css';
 
 function App() {
@@ -17,6 +22,11 @@ function App() {
           {/* <Route path='/inventory' element={<InventoryPage />} /> */}
           <Route path='inventory' element={<InventoryPage />} />
           <Route path='about' element={<AboutPage />} />
+          <Route path='tajibo' element={<Tajibo />} />
+          <Route path='pauqio' element={<Pauqio />} />
+          <Route path='morado' element={<Morado />} />
+          <Route path='tarara' element={<Tarara />} />
+          <Route path='cuta' element={<Cuta />} />
         </Routes>
       </div>
   );

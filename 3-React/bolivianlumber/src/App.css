@@ -207,9 +207,7 @@ h2 {
 }
 
 .woodList {
-  margin-top: -1000px;
-  padding: -1000px;
-  position: -1000px;
+  width: 2300px;
 }
 
 .tableHeader {
@@ -247,3 +245,18 @@ h2 {
   height: 500px;
   margin-left: 15%;
 } */
+
+.woodImages {
+  margin-top: 20%;
+  text-align: center;
+}
+
+.woodName {
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-align: left;
+  background-color: black;
+  
+  color: white;
+  opacity: .7;
+}
