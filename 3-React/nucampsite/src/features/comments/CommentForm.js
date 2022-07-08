@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import { Button, Modal, ModalHeader, ModalBody, FormGroup, Label } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { validateCommentForm } from '../../utils/validateCommentForm';
-// import { addComment } from './commentsSlice';
 import { postComment } from './commentsSlice';
 
 const CommentForm = ({ campsiteId }) => {

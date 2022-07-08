@@ -61,8 +61,7 @@ const commentsSlice = createSlice ({
             state.errMsg = action.error ? action.error.message: 'Fetch failed';
         },
         [postComment.rejected]: (state, action) => {
-            alert(
-                'Your comment could not be posted\nError: ' + (action.error ? action.error.message : 'Fetch Failed')
+            alert('Your comment could not be posted\nError: ' + (action.error ? action.error.message : 'Fetch Failed')
             )
         }
     }
