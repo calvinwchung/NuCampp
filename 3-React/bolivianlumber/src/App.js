@@ -4,7 +4,7 @@ import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 import InventoryPage from './pages/InventoryPage';
 import HomePage from './pages/HomePage';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Redirect } from 'react-router-dom';
 import Tajibo from './components/Tajibo';
 import Pauqio from './components/Pauqio';
 import Morado from './components/Morado';
@@ -27,6 +27,7 @@ function App() {
           <Route path='morado' element={<Morado />} />
           <Route path='tarara' element={<Tarara />} />
           <Route path='cuta' element={<Cuta />} />
+          <Route path="*"><NotFound/ ></Route>
         </Routes>
       </div>
   );

@@ -12,8 +12,9 @@ const InventoryPage = () => {
     return (
         <Container>
             <InventoryOne />
-            <InventoryBg />
             <InventoryForm />
+            <InventoryBg />
+            
         </Container>
     )
 };
