@@ -27,7 +27,7 @@ function App() {
           <Route path='morado' element={<Morado />} />
           <Route path='tarara' element={<Tarara />} />
           <Route path='cuta' element={<Cuta />} />
-          <Route path="*"><NotFound/ ></Route>
+          {/* <Route path="*"><NotFound/ ></Route> */}
         </Routes>
       </div>
   );
