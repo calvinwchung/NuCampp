@@ -8,7 +8,7 @@ import { PARTNERS } from '../shared/partners';
 const FeaturedItem = ({ item }) => {
   if (item) {
     return (
-      <Card  containerStyle={{ padding: 0 }}>
+      <Card containerStyle={{ padding: 0 }}>
         <Card.Image source={item.image}>
           <View style={{ justifyContent: 'center', flex: 1 }}>
             <Text 
