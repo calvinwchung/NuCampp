@@ -1,7 +1,8 @@
 import './contact.css'
-import Phone from '../../img/phone.png';
-import Email from '../../img/email.png';
-import Address from '../../img/address.png';
+import Phone2 from '../../img/phone2.png';
+import Email2 from '../../img/email2.png';
+import GitHub from '../../img/github.png';
+import Linkedin from '../../img/linkedin.png'
 import { useContext, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ThemeContext } from '../../context';
@@ -33,11 +34,11 @@ const Contact = () => {
       <div className='c-bg'></div>
       <div className='c-wrapper'>
         <div className='c-left'>
-          <h1 className='c-title'>Let's discuss your project</h1>
+          <h1 className='c-title'>Let's Connect!</h1>
           <div className='c-info'>
             <div className='c-info-item'>
               <img
-                src={Phone} 
+                src={Phone2} 
                 alt=''
                 className='c-icon'
               />
@@ -45,20 +46,28 @@ const Contact = () => {
             </div>
             <div className='c-info-item'>
               <img
-                src={Email} 
+                src={Email2} 
                 alt=''
                 className='c-icon'
               />
               calvin.w.chung@gmail.com
             </div>
-              <div className='c-info-item'>
+            <div className='c-info-item'>
               <img
-                src={Address} 
+                src={Linkedin} 
                 alt=''
                 className='c-icon'
               />
-              Philadelphia, PA
-              </div>
+              Linkedin
+            </div>
+            <div className='c-info-item'>
+              <img
+                src={GitHub} 
+                alt=''
+                className='c-icon'
+              />
+              GitHub
+            </div>
           </div>
         </div>
         <div className='c-right'>
@@ -67,7 +76,7 @@ const Contact = () => {
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Name' name='user_name'/>
-            <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Subject' name='user_subject'/>
+            <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Phone Number' name='user_number'/>
             <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Email' name='user_email'/>
             <textarea style={{backgroundColor: darkMode && '#333'}} rows='5' placeholder='Message' name='message'/>
             <button>Submit</button>
