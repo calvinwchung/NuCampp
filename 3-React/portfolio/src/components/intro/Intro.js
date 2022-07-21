@@ -1,7 +1,11 @@
 import './intro.css';
 import Me from '../../img/me.png';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context';
 
 const Intro = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="intro">
       <div className="intro-left">
@@ -28,6 +32,7 @@ const Intro = () => {
           fill="none"
           stroke="black"
           className="intro-scroll"
+          style={{stroke: darkMode && 'white'}}
           xmlns="http://www.w3.org/2000/svg"
         >
           <g id="scroll">
@@ -80,8 +85,8 @@ const Intro = () => {
       </div>
       <div className="intro-right">
         <div className='intro-bg'>
-          <img src={Me} alt='image of calvin chung' className='intro-img' />
         </div>
+        <img src={Me} alt='image of calvin chung' className='intro-img' />
       </div>
     </div>
   )

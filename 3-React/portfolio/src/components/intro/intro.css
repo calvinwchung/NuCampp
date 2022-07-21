@@ -89,3 +89,19 @@
   position: absolute;
   bottom: 20px;
 }
+
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+  }
+  .intro-left-wrapper {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .intro-desc {
+    display: none;
+  }
+}
