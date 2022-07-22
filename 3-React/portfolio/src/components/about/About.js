@@ -1,6 +1,6 @@
 import './about.css'
-import Snowboard from '../../img/snowboard.png'
 import Logo from '../../img/logo.png'
+import Coder from '../../img/coder.png'
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
       <div className='about-left'>
         <div className='about-card bg'></div>
         <div className='about-card'>
-          <img src={Snowboard} alt='software engineer coding' className='about-img' />
+          <img src={Coder} alt='software engineer coding' className='about-img' />
         </div>
       </div>
       <div className='about-right'>
@@ -25,7 +25,7 @@ const About = () => {
           <img src={Logo} alt='nucamp logo' className='about-nucamp-img'/>
           <div className='about-nucamp-texts'>
             <h4 className='about-nucamp-title'>NuCamp BootCamp</h4>
-            <p>
+            <p className='about-nucamp-sub'>
               Full Stack Developer student with a concentration on React, React Native, Bootstrap.
             </p>
           </div>

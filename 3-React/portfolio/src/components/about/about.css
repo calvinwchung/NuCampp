@@ -2,6 +2,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  margin-top: 10%;
 }
 
 .about-left {
@@ -86,6 +87,9 @@
   }
   .about-right {
     padding: 20px;
+  }
+  .about-desc {
+    display: none;
   }
 
 }

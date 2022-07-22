@@ -1,11 +1,11 @@
 import './contact.css'
-import Phone2 from '../../img/phone2.png';
-import Email2 from '../../img/email2.png';
-import GitHub from '../../img/github.png';
-import Linkedin from '../../img/linkedin.png'
 import { useContext, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { ThemeContext } from '../../context';
+import { BsPhone } from 'react-icons/bs';
+import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai'
 
 const Contact = () => {
     const formRef = useRef();
@@ -16,18 +16,22 @@ const Contact = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
       
-      emailjs.sendForm(
-        'service_sp7t34e', 
-        'template_gyb9d5o', 
-        formRef.current, 
-        'EfiEzCKHPneNETXu7')
-      .then((result) => {
+      emailjs
+        .sendForm(
+          "service_sp7t34e", 
+          "template_gyb9d5o", 
+          formRef.current, 
+          "EfiEzCKHPneNETXu7"
+        )
+      .then(
+        (result) => {
           console.log(result.text);
           setDone(true)
       }, (error) => {
           console.log(error.text);
-      });
-    }
+      }
+    );
+  }
 
   return (
     <div className="c">
@@ -37,35 +41,19 @@ const Contact = () => {
           <h1 className='c-title'>Let's Connect!</h1>
           <div className='c-info'>
             <div className='c-info-item'>
-              <img
-                src={Phone2} 
-                alt=''
-                className='c-icon'
-              />
+              <BsPhone className='c-icon'/>
               267-818-0847
             </div>
             <div className='c-info-item'>
-              <img
-                src={Email2} 
-                alt=''
-                className='c-icon'
-              />
+              <AiOutlineMail className='c-icon'/>
               calvin.w.chung@gmail.com
             </div>
             <div className='c-info-item'>
-              <img
-                src={Linkedin} 
-                alt=''
-                className='c-icon'
-              />
+              <AiOutlineLinkedin className='c-icon'/>
               Linkedin
             </div>
             <div className='c-info-item'>
-              <img
-                src={GitHub} 
-                alt=''
-                className='c-icon'
-              />
+              <AiFillGithub className='c-icon'/>
               GitHub
             </div>
           </div>
@@ -77,9 +65,9 @@ const Contact = () => {
           <form ref={formRef} onSubmit={handleSubmit}>
             <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Name' name='user_name'/>
             <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Phone Number' name='user_number'/>
-            <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Email' name='user_email'/>
+            <input style={{backgroundColor: darkMode && '#333'}} type='email' placeholder='Email' name='user_email'/>
             <textarea style={{backgroundColor: darkMode && '#333'}} rows='5' placeholder='Message' name='message'/>
-            <button>Submit</button>
+            <button type='submit'>Submit</button>
             {done && 'Thank you..'}
           </form>
         </div>

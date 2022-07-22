@@ -39,7 +39,7 @@
 
 .intro-title-wrapper {
   height: 100%;
-  animation: move 10s ease-in-out infinite alternate;
+  animation: move 6s ease-in-out infinite alternate;
 }
 
 @keyframes move {
@@ -103,5 +103,8 @@
   }
   .intro-desc {
     display: none;
+  }
+  .intro-title-item {
+    font-size: 20px;
   }
 }

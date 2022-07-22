@@ -46,7 +46,7 @@
 }
 
 .c-desc {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 form {
@@ -54,20 +54,25 @@ form {
 }
 
 input {
-  width: 50%;
+  width: 80%;
   height: 50px;
   border: none;
   border-bottom: 1px solid black;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
+  letter-spacing: 2px;
+  border-radius: 10px;
 }
 
 textarea {
-  width: 100%;
+  width: 80%;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
 }
 
 button {
@@ -75,8 +80,12 @@ button {
   padding: 15px;
   background-color: #59b256;
   color: white;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
+  width: 80%;
+  border-radius: 15px;
+  font-size: 15px;
+  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 480px) {
@@ -91,6 +100,7 @@ button {
   .c-info-item {
     margin: 20px 0px;
     width: 100%;
+    font-size: 12px;
   }
   .c-desc {
     display: none;
