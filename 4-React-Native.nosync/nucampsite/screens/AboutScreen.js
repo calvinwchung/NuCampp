@@ -1,4 +1,4 @@
-import { ScrollView } from "react-native";
+import { ScrollView, Text } from "react-native";
 import { Card, ListItem, Avatar } from 'react-native-elements';
 import { PARTNERS } from '../shared/partners';
 import { useState } from 'react';
@@ -22,7 +22,7 @@ const AboutScreen = () => {
       <Card>
         <Card.Title>Community Partners</Card.Title>
         <Card.Divider />
-        {/* {partners.map((partner) => {
+        {partners.map((partner) => {
           return (
             <ListItem key={partner.id} >
               <Avatar source={partner.image} rounded />
@@ -32,7 +32,7 @@ const AboutScreen = () => {
               </ListItem.Content>
             </ListItem>
           )}
-        )} */}
+        )}
       </Card>
     </ScrollView>
   )
