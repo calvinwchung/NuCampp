@@ -76,7 +76,7 @@ const Contact = () => {
             <input style={{backgroundColor: darkMode && '#333'}} type='email' placeholder='Email' name='user_email'/>
             <textarea style={{backgroundColor: darkMode && '#333'}} rows='5' placeholder='Message' name='message'/>
             <button type='submit'>Submit</button>
-            {done && alert('Thank you..')}
+            {done && alert('Thank you!')}
           </form>
         </div>
       </div>
