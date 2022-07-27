@@ -11,38 +11,37 @@ const Tarara = () => {
                 <Row className='row-content formBody woodList'>
                     <Col xs='7' className=''>
                         <h2 className='tableHeader1'>SPECIES INFORMATION</h2>
-                        <h3>Needs updated information</h3>
                         <hr/>
                     </Col>
                     <Col md='7' className=''>
                         <Row className='wood1'>
                             <Col className='woodName' sm='2' >Description</Col>
-                            <Col>Pronounced “e-pay”, Ipe is widely recognized as one of the hardest and most durable timber species in the world. Its wide color variation provides a striking appearance on decking, siding and other uses. It is naturally durable and resistant to rot and decay, making it an excellent choice for exterior applications.</Col>
+                            <Col>Tarara wood is a colorful exotic located in the forests of Brazil and Bolivia. Its heartwood color can be bright yellow to orange with long distinctive streaks of purple, red, and black.</Col>
                             
                         </Row>
                         <Row className='wood'>
                             <Col className='woodName' sm='2' >Other Names</Col>
-                            <Col>Ipe, Brazilian Walnut, Lapacho, Pau Lope™</Col>
+                            <Col>Centrolobium microchaete, Canary Wood</Col>
                             
                         </Row>
                         <Row className='wood1'>
                             <Col className='woodName' sm='2' >Origin</Col>
-                            <Col>Brazil, tropical South-America</Col>
+                            <Col>Bolivia and Brazil, South-America</Col>
                             
                         </Row>
                         <Row className='wood'>
                             <Col className='woodName' sm='2' >Density</Col>
-                            <Col>Janka scale hardness is 3684, making it extremely hard and durable</Col>
+                            <Col>As Canarywood ages the colors carmelize slowly while losing none of the beautiful wood figure, eventually yielding a more figured teak-like result. Tarara Amarilla is without question one of the most beautiful woods on the planet.</Col>
                             
                         </Row>
                         <Row className='wood1'>
                             <Col className='woodName' sm='2' >Workability</Col>
-                            <Col>Ipe can be difficult to work with, without the proper tooling. It can have a blunting effect on cutting edges, so pre-drilling for screws is recommended. Carbide-tipped saw blades should be used, making it much easier to cut. Ipe comes in long lengths, but planks do not bend well. It sands very smoothly with little or no splintering. Boards can be straight-line ripped and the edges can be eased, or rounded, using carbide tooling. Biscuit joiners work well for grooving hidden fastener systems. Ipe is said to glue well with certain adhesives and it is advised to use caution if using a nail gun for fastening.</Col>
+                            <Col>Tarara is durable and hard, but also rated as easy to work with, which is why, combined with its inherent attractiveness, it is often a choice for furniture makers. It's grain is irregular and interlocked, and has a lustrous surface with a medium and uniform texture.</Col>
                             
                         </Row>
                         <Row className='wood'>
                             <Col className='woodName' sm='2' >Durability</Col>
-                            <Col>Ipe can be used without preservatives or additional treatments. Ipe is expected to last 25+ years with little to no degradation from rot, decay or termite infestation</Col>
+                            <Col>Janka hardness is 2000 pounds of force. . Drying & shrinkage: It dries at a moderate rate with very little or no warp and shrinkage. Average reported shrinkage values (green to ovendry) are 2.4% radial, 5.6% tangential and 8.4% volumetric. The wood is dimensionally stable.</Col>
                             
                         </Row>
                     </Col>

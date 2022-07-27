@@ -2,8 +2,9 @@ const TextBox3 = () => {
     return (
         <div className="text-box">
             <h3 className="text-title">LOCATION</h3>
-            <p>' '
-            </p>
+            <p><b>Bolivian Jungle:</b> Harvesting Point</p>
+            <p><b>U.S.A. Operations:</b> Philadelphia PA</p>
+            <p><b>China Operations:</b> Bolivia</p>
         </div>
     );
 }

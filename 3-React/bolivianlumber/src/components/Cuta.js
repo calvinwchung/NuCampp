@@ -11,38 +11,37 @@ const Cuta = () => {
                 <Row className='row-content formBody woodList'>
                     <Col xs='7' className=''>
                         <h2 className='tableHeader1'>SPECIES INFORMATION</h2>
-                        <h3>Needs updated information</h3>
                         <hr/>
                     </Col>
                     <Col md='7' className=''>
                         <Row className='wood1'>
                             <Col className='woodName' sm='2' >Description</Col>
-                            <Col>Pronounced “e-pay”, Ipe is widely recognized as one of the hardest and most durable timber species in the world. Its wide color variation provides a striking appearance on decking, siding and other uses. It is naturally durable and resistant to rot and decay, making it an excellent choice for exterior applications.</Col>
+                            <Col>The heartwood is often described as lemon yellow and sometimes have a tinge of brown. The sapwood is also yellowish but may be nearly white. Grain: Straight grain and homogenous, with slightly interlocked grain.</Col>
                             
                         </Row>
                         <Row className='wood'>
                             <Col className='woodName' sm='2' >Other Names</Col>
-                            <Col>Ipe, Brazilian Walnut, Lapacho, Pau Lope™</Col>
+                            <Col>San Domingo Boxwood, Phyllostylon Rhamnoides</Col>
                             
                         </Row>
                         <Row className='wood1'>
                             <Col className='woodName' sm='2' >Origin</Col>
-                            <Col>Brazil, tropical South-America</Col>
+                            <Col>Southern Brazil and Cuba</Col>
                             
                         </Row>
                         <Row className='wood'>
                             <Col className='woodName' sm='2' >Density</Col>
-                            <Col>Janka scale hardness is 3684, making it extremely hard and durable</Col>
+                            <Col>The density at a moisture content of u = 12% is specified about 0.90 t/m3 . The wood can be dried only slowly, but then without cracks.</Col>
                             
                         </Row>
                         <Row className='wood1'>
                             <Col className='woodName' sm='2' >Workability</Col>
-                            <Col>Ipe can be difficult to work with, without the proper tooling. It can have a blunting effect on cutting edges, so pre-drilling for screws is recommended. Carbide-tipped saw blades should be used, making it much easier to cut. Ipe comes in long lengths, but planks do not bend well. It sands very smoothly with little or no splintering. Boards can be straight-line ripped and the edges can be eased, or rounded, using carbide tooling. Biscuit joiners work well for grooving hidden fastener systems. Ipe is said to glue well with certain adhesives and it is advised to use caution if using a nail gun for fastening.</Col>
+                            <Col>Easy to work with both hand and machine tools. Also has excellent finishing qualities.</Col>
                             
                         </Row>
                         <Row className='wood'>
                             <Col className='woodName' sm='2' >Durability</Col>
-                            <Col>Ipe can be used without preservatives or additional treatments. Ipe is expected to last 25+ years with little to no degradation from rot, decay or termite infestation</Col>
+                            <Col>Fine pores, scattered and numerous. Texture is fine and uniform. This species is very high density, resulting in a very hard wood.</Col>
                             
                         </Row>
                     </Col>
