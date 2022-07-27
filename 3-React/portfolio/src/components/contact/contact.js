@@ -5,10 +5,10 @@ import { ThemeContext } from '../../context';
 import { BsPhone } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { AiOutlineLinkedin } from 'react-icons/ai';
-import { AiFillGithub } from 'react-icons/ai'
+import { AiFillGithub } from 'react-icons/ai';
 
 const Contact = () => {
-    const formRef = useRef();
+    const form = useRef();
     const [done, setDone] = useState(false);
     const theme = useContext(ThemeContext);
     const darkMode = theme.state.darkMode;
@@ -20,7 +20,7 @@ const Contact = () => {
         .sendForm(
           "service_sp7t34e", 
           "template_gyb9d5o", 
-          formRef.current, 
+          form.current, 
           "EfiEzCKHPneNETXu7"
         )
       .then(
@@ -49,12 +49,20 @@ const Contact = () => {
               calvin.w.chung@gmail.com
             </div>
             <div className='c-info-item'>
-              <AiOutlineLinkedin className='c-icon'/>
-              Linkedin
+              <a className='linked' href='https://www.linkedin.com/in/calvin-chung-b02b8416a/' target='_blank' rel='noopener noreferrer'>
+                <AiOutlineLinkedin className='c-icon'/> 
+              </a>
+              <a className='linked' href='https://www.linkedin.com/in/calvin-chung-b02b8416a/' target='_blank' rel='noopener noreferrer'>
+                Linkedin
+              </a>
             </div>
             <div className='c-info-item'>
-              <AiFillGithub className='c-icon'/>
-              GitHub
+              <a className='git' href='https://github.com/calvinwchung' target='_blank' rel='noopener noreferrer'>
+                <AiFillGithub className='c-icon'/> 
+              </a>
+              <a className='git' href='https://github.com/calvinwchung' target='_blank' rel='noopener noreferrer'>  
+                GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -62,13 +70,13 @@ const Contact = () => {
           <p className='c-desc'>
           Feel free to contact me via <b>email or phone!</b>
           </p>
-          <form ref={formRef} onSubmit={handleSubmit}>
+          <form ref={form} onSubmit={handleSubmit}>
             <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Name' name='user_name'/>
             <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Phone Number' name='user_number'/>
             <input style={{backgroundColor: darkMode && '#333'}} type='email' placeholder='Email' name='user_email'/>
             <textarea style={{backgroundColor: darkMode && '#333'}} rows='5' placeholder='Message' name='message'/>
             <button type='submit'>Submit</button>
-            {done && 'Thank you..'}
+            {done && alert('Thank you..')}
           </form>
         </div>
       </div>
