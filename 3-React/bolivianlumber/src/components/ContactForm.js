@@ -1,13 +1,17 @@
 import { Button, Label, Col, FormGroup } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import { validateContactForm }  from '../utils/validateContactForm';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
-    const handleSubmit = (values, { resetForm }) => {
+    const handleSubmitReset = (values, { resetForm }) => {
         console.log('form values:', values);
         console.log('in JSON format:', JSON.stringify(values));
         resetForm();
     }
+
+
 
     return (
         <Formik            
@@ -20,9 +24,8 @@ const ContactForm = () => {
                 contactType: 'By Phone',
                 feedback: ''
             }}
-            onSubmit={handleSubmit}
-            validate={validateContactForm}
-            
+            onSubmit={handleSubmitReset}
+            validate={validateContactForm}            
         >
             <Form className='formBody'>
                 <FormGroup row className='formBody'>
@@ -47,6 +50,7 @@ const ContactForm = () => {
                             name='lastName'
                             placeholder='LAST NAME'
                             className='form-control formText'
+                            
                         />
                         <ErrorMessage name='lastName'>
                             {(msg) => <p className='text-danger errorMes'>{msg}</p>}

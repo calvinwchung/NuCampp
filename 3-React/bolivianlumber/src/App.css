@@ -265,8 +265,26 @@ h2 {
   display: flex;
   text-align: left;
   justify-content: center;
+  margin-top: 3%;
+  letter-spacing: 2px;
 }
 
 .calvin {
   margin-left: 10%;
+}
+
+.calvinPic, .jasonPic {
+  border-radius: 50%;
+  height: 80px;
+  margin-right: 10%;
+}
+
+.calvin, .jason {
+  display: flex;
+  margin-top: 3%;
+}
+
+.position {
+  width: 300px;
+  letter-spacing: 2px;
 }
