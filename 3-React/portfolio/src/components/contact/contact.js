@@ -38,22 +38,22 @@ const Contact = () => {
       <div className='c-bg'></div>
       <div className='c-wrapper'>
         <div className='c-left'>
-          <h1 className='c-title'>Let's Connect!</h1>
+          <h1 className='c-title'>let's connect!</h1>
           <div className='c-info'>
             <div className='c-info-item'>
               <BsPhone className='c-icon'/>
-              267-818-0847
+              <a>267-818-0847</a>
             </div>
             <div className='c-info-item'>
               <AiOutlineMail className='c-icon'/>
-              calvin.w.chung@gmail.com
+              <a>calvin.w.chung@gmail.com</a>
             </div>
             <div className='c-info-item'>
               <a className='linked' href='https://www.linkedin.com/in/calvin-chung-b02b8416a/' target='_blank' rel='noopener noreferrer'>
                 <AiOutlineLinkedin className='c-icon'/> 
               </a>
               <a className='linked' href='https://www.linkedin.com/in/calvin-chung-b02b8416a/' target='_blank' rel='noopener noreferrer'>
-                Linkedin
+                linkedin
               </a>
             </div>
             <div className='c-info-item'>
@@ -61,21 +61,21 @@ const Contact = () => {
                 <AiFillGithub className='c-icon'/> 
               </a>
               <a className='git' href='https://github.com/calvinwchung' target='_blank' rel='noopener noreferrer'>  
-                GitHub
+                github
               </a>
             </div>
           </div>
         </div>
         <div className='c-right'>
           <p className='c-desc'>
-          Feel free to contact me via <b>email or phone!</b>
+          feel free to contact me via <b>email or phone!</b>
           </p>
           <form ref={form} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Name' name='user_name'/>
-            <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='Phone Number' name='user_number'/>
-            <input style={{backgroundColor: darkMode && '#333'}} type='email' placeholder='Email' name='user_email'/>
-            <textarea style={{backgroundColor: darkMode && '#333'}} rows='5' placeholder='Message' name='message'/>
-            <button type='submit'>Submit</button>
+            <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='name' name='user_name'/>
+            <input style={{backgroundColor: darkMode && '#333'}} type='text' placeholder='phone number' name='user_number'/>
+            <input style={{backgroundColor: darkMode && '#333'}} type='email' placeholder='email' name='user_email'/>
+            <textarea style={{backgroundColor: darkMode && '#333'}} rows='5' placeholder='message' name='message'/>
+            <button type='submit'>submit</button>
             {done && alert('Thank you!')}
           </form>
         </div>

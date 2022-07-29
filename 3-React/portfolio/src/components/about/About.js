@@ -12,21 +12,21 @@ const About = () => {
         </div>
       </div>
       <div className='about-right'>
-        <h1 className='about-title'>About Me</h1>
+        <h1 className='about-title'>about me</h1>
         <h4 className='about-sub'>
-          NuCamp Full Stack Developer Student<br/>
-          Temple University Graduate: Finance<br/>
-          Senior Finance Associate at JPMorgan Chase
+          nucamp full stack developer student<br/>
+          temple university graduate: finance<br/>
+          senior finance associate at jpmorgan chase
         </h4>
         <p className='about-desc'>
-          I graduated from Temple University FOX School of business with a finance degree. I worked at JPMorgan Chase in the finance department for about 7-8 years before joining NuCamp to pursue coding. I've learned many languages including: React, React Native, JavaScript, HTML, CSS, BootStrap, MongoDB, jsNode, etc. I've worked on various projects to demonstrate my proficiency in the listed languages. Please continue to scroll down to see a small list of projects I've completed or visit my GitHub.
+          i graduated from temple university fox school of business with a finance degree. i worked at jpmorgan chase in the finance department for about 7-8 years before joining nucamp to pursue coding. i've learned many languages including: react, react native, javascript, html, css, bootstrap, mongo db, js node, etc. i've worked on various projects to demonstrate my proficiency in the listed languages. Please continue to scroll down to see a small list of projects I've completed or visit my github.
         </p>
         <div className='about-nucamp'>
           <img src={Logo} alt='nucamp logo' className='about-nucamp-img'/>
           <div className='about-nucamp-texts'>
-            <h4 className='about-nucamp-title'>NuCamp BootCamp</h4>
+            <h4 className='about-nucamp-title'>nucamp bootcamp</h4>
             <p className='about-nucamp-sub'>
-              Full Stack Developer student with a concentration on React, React Native, Bootstrap.
+              full stack developer student with a concentration on react, react native, bootstrap.
             </p>
           </div>
         </div>

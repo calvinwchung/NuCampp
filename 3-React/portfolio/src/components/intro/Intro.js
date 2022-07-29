@@ -10,19 +10,19 @@ const Intro = () => {
     <div className="intro">
       <div className="intro-left">
         <div className='intro-left-wrapper'>
-          <h2 className='intro-intro'>Hello, My name is</h2>
-          <h1 className='intro-name'>Calvin Chung</h1>
+          <h2 className='intro-intro'>hello, my name is</h2>
+          <h1 className='intro-name'>calvin chung</h1>
           <div className='intro-title'>
             <div className='intro-title-wrapper'>
-              <div className='intro-title-item'>Full Stack Developer</div>
-              <div className='intro-title-item'>NuCamp Graduate</div>
-              <div className='intro-title-item'>React/React Native</div>
-              <div className='intro-title-item'>Web Development</div>
-              <div className='intro-title-item'>Design and Innovation</div>
+              <div className='intro-title-item'>full stack developer</div>
+              <div className='intro-title-item'>nucamp graduate</div>
+              <div className='intro-title-item'>react/react native</div>
+              <div className='intro-title-item'>web development</div>
+              <div className='intro-title-item'>design and innovation</div>
             </div>
           </div> 
           <p className='intro-desc'>
-            I design and develop websites for customers everywhere, specializing in creative, stylish, modern web designs and web services.
+            i design and develop websites for customers everywhere, specializing in creative, stylish, modern web designs and web services.
           </p>
         </div>
         <svg

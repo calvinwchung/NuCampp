@@ -33,6 +33,22 @@
   letter-spacing: 5px;
 }
 
+.intro-name::after {
+  content: "";
+  position: relative;
+  width: 1px;
+  border-right: 4px solid black;
+  animation: blink 1.3s infinite ease;
+}
+@keyframes blink {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
 .intro-title {
   height: 50px;
   overflow: hidden;

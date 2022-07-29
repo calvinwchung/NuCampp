@@ -3,8 +3,9 @@
   height: 35vh;
   margin: 20px 10px;
   border: 2px solid rgb(243, 242, 242);
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow: 2px 2px darkgray;
 }
 
 .p-browser {
@@ -22,6 +23,7 @@
   border-radius: 50%;
   margin: 3px;
   background-color: white;
+  box-shadow: 1px 1px darkgray;
 }
 
 .p-img {

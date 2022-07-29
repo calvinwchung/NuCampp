@@ -6,9 +6,9 @@ const ProductList = () => {
   return (
     <div className='pl'>
       <div className='pl-texts'>
-        <h1 className='pl-title'>Projects</h1>
+        <h1 className='pl-title'>projects</h1>
         <p className='pl-desc'>
-          These are some of the projects that I've worked on during my time with NuCamp. To see the full list of projects I've worked on please visit my GitHub.
+          these are some of the projects that i've worked on during my time with nucamp. to see the full list of projects i've worked on please visit my github.
         </p>
       </div>
       <div className='pl-list'>
