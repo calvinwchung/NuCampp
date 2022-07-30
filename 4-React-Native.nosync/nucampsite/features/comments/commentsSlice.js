@@ -31,13 +31,9 @@ const commentsSlice = createSlice({
     initialState: { isLoading: true, errMess: null, commentsArray: [] },
     reducers: {
         addComment: (state, action) => {
-            if (state.commentsArray.includes(action.payload)) {
-                return state.commentsArray.filter(
-                    (comment) => comment !== action.payload
-                );
-        } else {
+           
             state.commentsArray.push(action.payload);
-            }
+            
         }
     },
     extraReducers: {
