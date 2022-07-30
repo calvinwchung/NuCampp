@@ -6,6 +6,7 @@ import { Button, Modal} from 'react-native';
 import { useState } from 'react';
 import { Rating, Input } from 'react-native-elements';
 import { PrivateValueStore } from '@react-navigation/native';
+import { postComment } from '../features/comments/commentsSlice';
 
 const CampsiteInfoScreen = ({ route }) => {
   const { campsite } = route.params;
@@ -25,7 +26,7 @@ const CampsiteInfoScreen = ({ route }) => {
       text,
       campsiteId: campsite.id
     };
-    console.log('newComment:', newComment);
+    dispatch(postComment(newComment));
     setShowModal(!showModal);
   }
 

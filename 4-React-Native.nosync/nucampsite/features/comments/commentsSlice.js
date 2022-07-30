@@ -5,7 +5,11 @@ export const fetchComments = createAsyncThunk(
     'comments/fetchComments',
     async () => {
         const response = await fetch(baseUrl + 'comments');
-        return response.json();
+        if (!response.ok) {
+            return Promise.reject('Unable to fetch, status: ' + response.status);
+        }
+        const data = await response.json();
+        return data;
     }
 );
 
@@ -13,9 +17,13 @@ export const postComment = createAsyncThunk(
     'comments/postComment',
     async (payload, { dispatch, getState }) => {
         setTimeout(() => {
-
+            const { comments } = getState();
+            const date = new Date().toISOString();
+            payload.date = date;
+            payload.id = comments.commentsArray.length;
+            dispatch(addComment(payload));
         }, 2000);
-    }
+    } 
 )
 
 const commentsSlice = createSlice({
@@ -23,7 +31,13 @@ const commentsSlice = createSlice({
     initialState: { isLoading: true, errMess: null, commentsArray: [] },
     reducers: {
         addComment: (state, action) => {
-            state.commentsArray.push(action.payload)
+            if (state.commentsArray.includes(action.payload)) {
+                return state.commentsArray.filter(
+                    (comment) => comment !== action.payload
+                );
+        } else {
+            state.commentsArray.push(action.payload);
+            }
         }
     },
     extraReducers: {
