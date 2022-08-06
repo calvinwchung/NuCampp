@@ -21,6 +21,7 @@ const RenderCampsite = (props) => {
           console.log(endState.finished ? 'finished' : 'canceled')
         );
     },
+    
     onPanResponderEnd: (e, gestureState) => {
       console.log('pan responder end', gestureState);
       if (isLeftSwipe(gestureState)) {
