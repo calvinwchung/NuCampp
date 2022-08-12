@@ -221,15 +221,10 @@ const CustomDrawerContent = (props) => (
 const Main = () => {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchCampsites());
-    dispatch(fetchPromotions());
-    dispatch(fetchPartners());
-    dispatch(fetchComments());
-  }, [dispatch]);
-
-  useEffect(() => {
-    NetInfo.fetch().then((connectionInfo) => {
+  const showNetInfo = async () => {
+    let connectionInfo = await NetInfo.fetch()
+    
+   if (connectionInfo) {
       Platform.OS === 'ios'
         ? Alert.alert(
           'Initial Network Connectivity Type:', 
@@ -240,7 +235,18 @@ const Main = () => {
             connectionInfo.type,
           ToastAndroid.LONG
         );
-    });
+    };
+  }
+
+  useEffect(() => {
+    dispatch(fetchCampsites());
+    dispatch(fetchPromotions());
+    dispatch(fetchPartners());
+    dispatch(fetchComments());
+  }, [dispatch]);
+
+  useEffect(() => {
+    showNetInfo();
 
     const unsubscribeNetInfo = NetInfo.addEventListener(
         (connectionInfo) => {
